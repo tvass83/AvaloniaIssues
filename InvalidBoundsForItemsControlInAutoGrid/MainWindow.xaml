@@ -1,0 +1,51 @@
+<Window x:Class="InvalidBoundsForItemsControlInAutoGrid.MainWindow"
+        xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:local="clr-namespace:InvalidBoundsForItemsControlInAutoGrid"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        Title="InvalidBoundsForItemsControlInAutoGrid"
+        d:DesignWidth="400"
+        Height="400"
+        Padding="20"
+        Width="600"
+        mc:Ignorable="d">
+    <Window.DataContext>
+        <local:MainViewModel />
+    </Window.DataContext>
+
+    <Grid RowDefinitions="Auto,*">
+        <StackPanel Orientation="Horizontal"
+                    Spacing="10">
+
+            <Button Command="{Binding NavigateCommand}"
+                    CommandParameter="A"
+                    Content="SubView1" />
+
+            <Button Command="{Binding NavigateCommand}"
+                    CommandParameter="B"
+                    Content="SubView2" />
+        </StackPanel>
+
+        <Grid Grid.Row="1">
+            <Grid IsVisible="{Binding !ViewToggle}">
+                <TextBlock Text="SubView1" />
+            </Grid>
+
+            <Grid ColumnDefinitions="*,Auto"
+                  IsVisible="{Binding ViewToggle}"
+                  RowDefinitions="*,Auto"
+                  ShowGridLines="True">
+
+                <!-- Using a monospace font is important as items will be of the same width -->
+                <ItemsControl Background="Pink"
+                              FontFamily="Consolas"
+                              Grid.Column="1"
+                              Items="{Binding Tracks}"
+                              VerticalAlignment="Top" />
+
+                <Grid Grid.Row="1" />
+            </Grid>
+        </Grid>
+    </Grid>
+</Window>
