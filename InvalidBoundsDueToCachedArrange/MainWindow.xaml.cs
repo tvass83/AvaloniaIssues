@@ -2,7 +2,7 @@ using Avalonia;
 using Avalonia.Controls;
 using Avalonia.Markup.Xaml;
 
-namespace AvaloniaApplication54_BusyIndicatorDialogScrambled
+namespace InvalidBoundsDueToCachedArrange
 {
     public class MainWindow : Window
     {

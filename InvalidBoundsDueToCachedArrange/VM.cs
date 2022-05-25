@@ -2,7 +2,7 @@
 using System;
 using System.Reactive.Disposables;
 
-namespace AvaloniaApplication54_BusyIndicatorDialogScrambled
+namespace InvalidBoundsDueToCachedArrange
 {
     public class VM : ReactiveObject
     {

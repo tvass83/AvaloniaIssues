@@ -3,7 +3,7 @@ using Avalonia.Controls;
 using Avalonia.Controls.ApplicationLifetimes;
 using System;
 
-namespace AvaloniaApplication54_BusyIndicatorDialogScrambled
+namespace InvalidBoundsDueToCachedArrange
 {
     class Program
     {
