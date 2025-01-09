@@ -1,0 +1,32 @@
+using Avalonia;
+using Avalonia.Controls;
+using Avalonia.Controls.Presenters;
+using Avalonia.Controls.Primitives;
+using Avalonia.Controls.Shapes;
+using Avalonia.Data;
+using Avalonia.Data.Converters;
+using Avalonia.Input;
+using Avalonia.LogicalTree;
+using Avalonia.Markup.Xaml;
+using Avalonia.Markup.Xaml.MarkupExtensions;
+using Avalonia.Markup.Xaml.Templates;
+using Avalonia.VisualTree;
+using ReactiveUI;
+using System;
+
+namespace Avalonia10App_InvalidBoundsForSelectedItem
+{
+    public class MainWindow : Window
+    {
+        public MainWindow()
+        {
+            AvaloniaXamlLoader.Load(this);
+
+            this.AttachDevTools();
+        }
+
+        public static IValueConverter IsDefaultRowConverter { get; } = new FuncValueConverter<Data, bool>(value => value is Data { IsSpecial: false });
+
+        public static IValueConverter IsSpecialRowConverter { get; } = new FuncValueConverter<Data, bool>(value => value is Data { IsSpecial: true });
+    }
+}

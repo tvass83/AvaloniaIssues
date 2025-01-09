@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35327.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Avalonia11App_InvalidBoundsForSelectedItem", "Avalonia11App_InvalidBoundsForSelectedItem\Avalonia11App_InvalidBoundsForSelectedItem.csproj", "{6379C2FF-8D63-4CBA-A09F-257399895307}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Avalonia10App_InvalidBoundsForSelectedItem", "Avalonia10App_InvalidBoundsForSelectedItem\Avalonia10App_InvalidBoundsForSelectedItem.csproj", "{28B87B9A-2693-4E77-8E5A-3EBA1FD329ED}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6379C2FF-8D63-4CBA-A09F-257399895307}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6379C2FF-8D63-4CBA-A09F-257399895307}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6379C2FF-8D63-4CBA-A09F-257399895307}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6379C2FF-8D63-4CBA-A09F-257399895307}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28B87B9A-2693-4E77-8E5A-3EBA1FD329ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28B87B9A-2693-4E77-8E5A-3EBA1FD329ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28B87B9A-2693-4E77-8E5A-3EBA1FD329ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28B87B9A-2693-4E77-8E5A-3EBA1FD329ED}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {88827E7D-EE29-4785-B56D-FA4902F46EE5}
+	EndGlobalSection
+EndGlobal
