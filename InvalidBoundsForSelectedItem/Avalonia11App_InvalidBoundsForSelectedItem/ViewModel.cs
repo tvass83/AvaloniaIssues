@@ -12,7 +12,7 @@ namespace Avalonia11App_InvalidBoundsForSelectedItem
                 Values.Add(new Data(i));
             }
 
-            Values.Add(new DataEx(-1, true));
+            Values.Add(new DataEx(-1));
 
             for (int i = 16; i < 31; i++)
             {
@@ -25,25 +25,22 @@ namespace Avalonia11App_InvalidBoundsForSelectedItem
 
     public class Data
     {
-        public Data(int val, bool isSpecial = false)
+        public Data(int val)
         {
             Value = val;
-            IsSpecial = isSpecial;
         }
-
-        public bool IsSpecial { get; set; }
 
         public int Value { get; set; }
 
         public override string ToString()
         {
-            return $"Value: {Value} IsSpecial: {IsSpecial}";
+            return $"Value: {Value}";
         }
     }
 
     public class DataEx : Data
     {
-        public DataEx(int val, bool isSpecial = false) : base(val, isSpecial)
+        public DataEx(int val) : base(val)
         {
         }
     }

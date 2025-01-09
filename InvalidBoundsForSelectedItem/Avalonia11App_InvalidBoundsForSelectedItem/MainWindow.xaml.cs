@@ -22,9 +22,5 @@ namespace Avalonia11App_InvalidBoundsForSelectedItem
         {
             InitializeComponent();
         }
-
-        public static IValueConverter IsDefaultRowConverter { get; } = new FuncValueConverter<Data, bool>(value => value is Data { IsSpecial: false });
-
-        public static IValueConverter IsSpecialRowConverter { get; } = new FuncValueConverter<Data, bool>(value => value is Data { IsSpecial: true });
     }
 }

@@ -24,9 +24,5 @@ namespace Avalonia10App_InvalidBoundsForSelectedItem
 
             this.AttachDevTools();
         }
-
-        public static IValueConverter IsDefaultRowConverter { get; } = new FuncValueConverter<Data, bool>(value => value is Data { IsSpecial: false });
-
-        public static IValueConverter IsSpecialRowConverter { get; } = new FuncValueConverter<Data, bool>(value => value is Data { IsSpecial: true });
     }
 }
