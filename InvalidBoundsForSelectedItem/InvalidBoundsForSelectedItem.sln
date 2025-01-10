@@ -5,7 +5,9 @@ VisualStudioVersion = 17.11.35327.3
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Avalonia11App_InvalidBoundsForSelectedItem", "Avalonia11App_InvalidBoundsForSelectedItem\Avalonia11App_InvalidBoundsForSelectedItem.csproj", "{6379C2FF-8D63-4CBA-A09F-257399895307}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Avalonia10App_InvalidBoundsForSelectedItem", "Avalonia10App_InvalidBoundsForSelectedItem\Avalonia10App_InvalidBoundsForSelectedItem.csproj", "{28B87B9A-2693-4E77-8E5A-3EBA1FD329ED}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Avalonia10App_InvalidBoundsForSelectedItem", "Avalonia10App_InvalidBoundsForSelectedItem\Avalonia10App_InvalidBoundsForSelectedItem.csproj", "{28B87B9A-2693-4E77-8E5A-3EBA1FD329ED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfApp_InvalidBoundsForSelectedItem", "WpfApp_InvalidBoundsForSelectedItem\WpfApp_InvalidBoundsForSelectedItem.csproj", "{86884F4C-DE89-46EB-91B7-039C6DE1F91E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{28B87B9A-2693-4E77-8E5A-3EBA1FD329ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{28B87B9A-2693-4E77-8E5A-3EBA1FD329ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{28B87B9A-2693-4E77-8E5A-3EBA1FD329ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86884F4C-DE89-46EB-91B7-039C6DE1F91E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86884F4C-DE89-46EB-91B7-039C6DE1F91E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86884F4C-DE89-46EB-91B7-039C6DE1F91E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86884F4C-DE89-46EB-91B7-039C6DE1F91E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
