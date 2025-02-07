@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <OutputType>WinExe</OutputType>
+        <PlatformTarget>AnyCPU</PlatformTarget>
+        <!--<TargetFrameworks>net8.0-windows</TargetFrameworks>-->
+        <TargetFrameworks>net8.0-windows10.0.19041</TargetFrameworks>
+        <UseWPF>true</UseWPF>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <ReactiveUIVersion>20.1.1</ReactiveUIVersion>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="ReactiveUI" Version="$(ReactiveUIVersion)" />
+        <PackageReference Include="ReactiveUI.WPF" Version="$(ReactiveUIVersion)" />
+    </ItemGroup>
+</Project>
