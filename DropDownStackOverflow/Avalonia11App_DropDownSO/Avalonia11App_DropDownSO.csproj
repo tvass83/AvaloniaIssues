@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <OutputType>WinExe</OutputType>
+        <PlatformTarget>AnyCPU</PlatformTarget>
+        <TargetFrameworks>net8.0</TargetFrameworks>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <AvaloniaXaml Include="App.xaml" />
+        <AvaloniaXaml Include="MainWindow.xaml" />
+    </ItemGroup>
+
+    <PropertyGroup>
+        <AvaloniaVersion>11.2.3</AvaloniaVersion>
+        <ReactiveUIVersion>20.1.1</ReactiveUIVersion>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Avalonia" Version="$(AvaloniaVersion)" />
+        <PackageReference Include="Avalonia.Desktop" Version="$(AvaloniaVersion)" />
+        <PackageReference Include="Avalonia.Diagnostics" Version="$(AvaloniaVersion)" />
+        <PackageReference Include="Avalonia.Direct2D1" Version="$(AvaloniaVersion)" />
+        <PackageReference Include="Avalonia.ReactiveUI" Version="$(AvaloniaVersion)" />
+        <PackageReference Include="Avalonia.Skia" Version="$(AvaloniaVersion)" />
+        <PackageReference Include="Avalonia.Themes.Simple" Version="$(AvaloniaVersion)" />
+        <PackageReference Include="ReactiveUI" Version="$(ReactiveUIVersion)" />
+    </ItemGroup>
+</Project>
